@@ -3,6 +3,12 @@
     stroke:#333;
     stroke-width:0.1
 }
+
+.shot-chart-court-icon *{
+    fill:transparent;
+    stroke:#333;
+    stroke-width:0.7
+}
 .shot-chart-court-ft-circle-bottom{
     stroke-dasharray:1.5, 1
 }

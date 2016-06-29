@@ -928,7 +928,9 @@ opts = {
 
 const coefficient =  0.79521276595;
 
-var o = opts
+var o = opts;
+
+console.log("BASKETBALL");
 
 calculateVisibleCourtLength = function () {
     var halfCourtLength = o.courtLength / 2;
@@ -969,13 +971,77 @@ var drawCourt = function () {
 
     console.log(o.visibleCourtLength);
 
-    for (var i=0; i<47; i++){
+/*    for (var i=0; i<47; i++){
         base.append("text")
             .attr("x", 0)
             .attr("y", i)
             .text("Y: " + i)
             .attr("font-size", "0.5px")
+    }*/
+
+
+    var matrix = [];
+    var color1 = "#8b0000";
+    var shadedcolor1 = shadeBlend(0,color1);
+    var max = 0;
+
+    for (var i=0; i<10; i++){
+        matrix[i] = new Array(12);
+        for (var j=0; j<12; j++){
+            matrix[i][j] = 0;
+        }
     }
+
+
+    for (var i=0; i<podatoci.length; i++){
+        var x = 49.5 - ((podatoci[i].x + 250) / 10);
+        var y = 35.5 - ((podatoci[i].y + 30) / 10);
+
+        var row = Math.floor(y/3);
+        var column = Math.floor(x/5);
+
+        if (podatoci[i].made == 1){
+            matrix[column][row]+=1;
+            if (matrix[column][row] > max){
+                max = matrix[column][row];
+            }
+        }
+    }
+
+    for (var i=0; i<10; i++){
+        for (var j=0; j<12; j++){
+
+            var colorPercent = 1 - (matrix[i][j]/max);
+            var rand = Math.random();;
+            var fieldColor = shadeBlend(rand, color1);
+
+            base.append("rect")
+                .attr("x", i*5)
+                .attr("y", j*3)
+                .attr("width", 5)
+                .attr("height", 3)
+                .style("stroke", fieldColor)
+                .style("fill", fieldColor)
+        }
+    }
+
+/*    for (var i=0; i<37; i=i+3){
+        base.append("line")
+            .attr("x1", 0)
+            .attr("y1", i)
+            .attr("x2", 500)
+            .attr("y2", i)
+            .style("stroke", "black")
+    }
+
+    for (var i=0; i<50; i=i+5){
+        base.append("line")
+            .attr("x1", i)
+            .attr("y1", 0)
+            .attr("x2", i)
+            .attr("y2", 37)
+            .style("stroke", "black")
+    }*/
 
 
 
@@ -984,13 +1050,15 @@ var drawCourt = function () {
         .attr("x", (o.courtWidth / 2 - o.keyWidth / 2))
         .attr("y", (o.visibleCourtLength - o.freeThrowLineLength))
         .attr("width", o.keyWidth)
-        .attr("height", o.freeThrowLineLength);
+        .attr("height", o.freeThrowLineLength)
+        .attr("stroke-width", 10);
 
     base.append("rect")
         .attr("x", 0)
         .attr("y", 0)
         .attr("width", 50)
         .attr("height", 47)
+
 
     base.append("line")
         .attr('class', 'shot-chart-court-baseline')
@@ -1055,6 +1123,10 @@ var drawCourt = function () {
         .attr("cy", o.visibleCourtLength - o.basketProtrusionLength - o.basketDiameter / 2)
         .attr("r", o.basketDiameter / 2)
 
+
+
+/*
+
     for (var i=0; i<podatoci.length; i++){
 
         if (podatoci[i].made==1) {
@@ -1071,9 +1143,20 @@ var drawCourt = function () {
                 .style("fill", "red");
         }
     }
+*/
 
-    console.log("Visina: " + document.getElementById('svg1').getBoundingClientRect().height)
 
+}
+
+function shadeBlend(p,c0,c1) {
+    var n=p<0?p*-1:p,u=Math.round,w=parseInt;
+    if(c0.length>7){
+        var f=c0.split(","),t=(c1?c1:p<0?"rgb(0,0,0)":"rgb(255,255,255)").split(","),R=w(f[0].slice(4)),G=w(f[1]),B=w(f[2]);
+        return "rgb("+(u((w(t[0].slice(4))-R)*n)+R)+","+(u((w(t[1])-G)*n)+G)+","+(u((w(t[2])-B)*n)+B)+")"
+    }else{
+        var f=w(c0.slice(1),16),t=w((c1?c1:p<0?"#000000":"#FFFFFF").slice(1),16),R1=f>>16,G1=f>>8&0x00FF,B1=f&0x0000FF;
+        return "#"+(0x1000000+(u(((t>>16)-R1)*n)+R1)*0x10000+(u(((t>>8&0x00FF)-G1)*n)+G1)*0x100+(u(((t&0x0000FF)-B1)*n)+B1)).toString(16).slice(1)
+    }
 }
 
 drawCourt()
