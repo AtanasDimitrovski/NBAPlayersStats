@@ -1,3 +1,27 @@
 <md-progress-circular md-mode="indeterminate" ng-show="progress"></md-progress-circular>
 
-<svg id="heatmap-court"></svg>
+
+<div layout="row" layout-padding>
+
+    <div layout="column">
+        <div id="svg-container">
+        </div>
+        <div>
+            <md-checkbox ng-model="heatShots" aria-label="Checkbox 1" ng-change="showHeatShots()">
+                Show shots
+            </md-checkbox>
+        </div>
+    </div>
+
+    <div layout="column">
+        <div id="svg-container-ice">
+        </div>
+        <div>
+            <md-checkbox ng-model="iceShots" aria-label="Checkbox 2" ng-change="shotIceShots()">
+                Show shots
+            </md-checkbox>
+        </div>
+    </div>
+
+
+</div>

@@ -2,38 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7cdb7d2-2e01-442d-870c-761ee1e0cd25" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/svg/avatars.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/buckets.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/controllers/bucketsController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/svg/google_plus.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/svg/hangouts.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/heatmap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/svg/heatmap.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/controllers/heatmapController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/svg/isaiah.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/svg/mail.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/svg/menu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/svg/phone.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/controllers/probabilityController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/svg/share.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/shot-chart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/svg/shot-chart.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/shot-efficiency.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/controllers/shotChartController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/services/shotChartService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/controllers/sideBarController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/services/sideBarService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/services/svgBasketballCourtService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/svg/twitter.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/bower_components/angular-chart.js/dist/angular-chart.js.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/svg/B-Ball_Retro_Net.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/bower_components/angular-chart.js/dist/angular-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/bower_components/angular-chart.js/dist/angular-chart.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/bower_components/angular-chart.js/dist/angular-chart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/services/playerStatsService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app.js" afterPath="$PROJECT_DIR$/client/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/basketballCourt.js" afterPath="$PROJECT_DIR$/client/basketballCourt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/buckets.html" afterPath="$PROJECT_DIR$/client/views/buckets.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/controllers/bucketsController.js" afterPath="$PROJECT_DIR$/client/controllers/bucketsController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/heatmap.html" afterPath="$PROJECT_DIR$/client/views/heatmap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/controllers/heatmapController.js" afterPath="$PROJECT_DIR$/client/controllers/heatmapController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/controllers/probabilityController.js" afterPath="$PROJECT_DIR$/client/controllers/probabilityController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externalServices/service.js" afterPath="$PROJECT_DIR$/externalServices/service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/style.css" afterPath="$PROJECT_DIR$/client/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/shot-chart.html" afterPath="$PROJECT_DIR$/client/views/shot-chart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/shot-efficiency.html" afterPath="$PROJECT_DIR$/client/views/shot-efficiency.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/controllers/shotChartController.js" afterPath="$PROJECT_DIR$/client/controllers/shotChartController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/services/svgBasketballCourtService.js" afterPath="$PROJECT_DIR$/client/services/svgBasketballCourtService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Soa_Project.iws" />
@@ -58,8 +45,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.038462">
-              <caret line="127" column="68" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="68" />
+            <state vertical-scroll-proportion="-15.230769">
+              <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#md-autocomplete#0;n#md-list-item#0;n#md-list#0;n#md-sidenav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -67,65 +54,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="shot-efficiency.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/shot-efficiency.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="buckets.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/buckets.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sideBarController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/controllers/sideBarController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#43#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shotChartController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/controllers/shotChartController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="heatmapController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/controllers/heatmapController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-              <folding>
-                <element signature="e#201#252#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            <state vertical-scroll-proportion="-0.65384614">
+              <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -135,17 +78,30 @@
         <entry file="file://$PROJECT_DIR$/client/controllers/bucketsController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="probabilityController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/controllers/probabilityController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#43#0" expanded="false" />
+                <element signature="e#255#314#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="service.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/externalServices/service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.60379463">
+              <caret line="211" column="65" selection-start-line="211" selection-start-column="65" selection-end-line="211" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -170,10 +126,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/client/data.js" />
         <option value="$PROJECT_DIR$/players.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/client/css/app.css" />
         <option value="$PROJECT_DIR$/client/assets/menu.svg" />
-        <option value="$PROJECT_DIR$/client/app.js" />
         <option value="$PROJECT_DIR$/client/assets/svg/isaiah.svg" />
         <option value="$PROJECT_DIR$/client/assets/svg/shot-chart.svg" />
         <option value="$PROJECT_DIR$/client/start.html" />
@@ -186,21 +140,24 @@
         <option value="$PROJECT_DIR$/client/controllers/homeController.js" />
         <option value="$PROJECT_DIR$/client/services/svgBasketballCourt.js" />
         <option value="$PROJECT_DIR$/client/services/shotChartService.js" />
+        <option value="$PROJECT_DIR$/client/services/sideBarService.js" />
+        <option value="$PROJECT_DIR$/client/controllers/sideBarController.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/client/router.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/client/app.js" />
+        <option value="$PROJECT_DIR$/client/services/playerStatsService.js" />
+        <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/client/services/svgBasketballCourtService.js" />
         <option value="$PROJECT_DIR$/client/views/shot-chart.html" />
-        <option value="$PROJECT_DIR$/client/views/shot-efficiency.html" />
-        <option value="$PROJECT_DIR$/client/views/heatmap.html" />
-        <option value="$PROJECT_DIR$/client/services/sideBarService.js" />
-        <option value="$PROJECT_DIR$/client/controllers/probabilityController.js" />
-        <option value="$PROJECT_DIR$/client/controllers/sideBarController.js" />
-        <option value="$PROJECT_DIR$/client/controllers/heatmapController.js" />
         <option value="$PROJECT_DIR$/client/controllers/shotChartController.js" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/externalServices/service.js" />
-        <option value="$PROJECT_DIR$/client/router.js" />
-        <option value="$PROJECT_DIR$/client/index.html" />
-        <option value="$PROJECT_DIR$/client/views/buckets.html" />
+        <option value="$PROJECT_DIR$/client/views/heatmap.html" />
+        <option value="$PROJECT_DIR$/client/controllers/heatmapController.js" />
+        <option value="$PROJECT_DIR$/client/controllers/probabilityController.js" />
+        <option value="$PROJECT_DIR$/client/views/shot-efficiency.html" />
         <option value="$PROJECT_DIR$/client/controllers/bucketsController.js" />
+        <option value="$PROJECT_DIR$/client/views/buckets.html" />
+        <option value="$PROJECT_DIR$/externalServices/service.js" />
       </list>
     </option>
   </component>
@@ -212,8 +169,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -238,6 +197,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -316,38 +277,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Soa_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Soa_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/Laboratoriski3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="FullScreen" value="false" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -356,6 +297,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Atanas\Desktop\Soa_Project\client\assets\svg" />
+      <recent name="C:\Users\Atanas\Desktop\Soa_Project\client\bower_components\angular-chart.js" />
       <recent name="C:\Users\Atanas\Desktop\Soa_Project\client\assets" />
       <recent name="C:\Users\Atanas\Desktop\Soa_Project\client" />
       <recent name="C:\Users\Atanas\Desktop\Soa_Project" />
@@ -419,13 +361,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973433" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22286618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -437,7 +380,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -454,41 +396,25 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/externalServices/service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="111" selection-start-line="18" selection-start-column="111" selection-end-line="18" selection-end-column="111" />
           <folding>
-            <element signature="e#6816#7355#0" expanded="false" />
+            <element signature="e#194#1009#0" expanded="false" />
+            <element signature="e#1068#3732#0" expanded="false" />
+            <element signature="e#3788#4088#0" expanded="false" />
+            <element signature="e#4132#4432#0" expanded="false" />
+            <element signature="e#4499#6367#0" expanded="false" />
+            <element signature="e#6418#6928#0" expanded="false" />
+            <element signature="e#6992#7734#0" expanded="false" />
+            <element signature="e#7861#9871#0" expanded="false" />
+            <element signature="n#!!block;n#getSeason#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -539,7 +465,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
-            <element signature="e#6816#7355#0" expanded="false" />
+            <element signature="e#194#1009#0" expanded="false" />
+            <element signature="e#1068#3732#0" expanded="false" />
+            <element signature="e#3788#4088#0" expanded="false" />
+            <element signature="e#4132#4432#0" expanded="false" />
+            <element signature="e#4499#6367#0" expanded="false" />
+            <element signature="e#6418#6928#0" expanded="false" />
+            <element signature="e#6992#7734#0" expanded="false" />
+            <element signature="e#7861#9871#0" expanded="false" />
+            <element signature="n#!!block;n#getSeason#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -564,7 +498,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6816#7355#0" expanded="false" />
+            <element signature="e#194#1009#0" expanded="false" />
+            <element signature="e#1068#3732#0" expanded="false" />
+            <element signature="e#3788#4088#0" expanded="false" />
+            <element signature="e#4132#4432#0" expanded="false" />
+            <element signature="e#4499#6367#0" expanded="false" />
+            <element signature="e#6418#6928#0" expanded="false" />
+            <element signature="e#6992#7734#0" expanded="false" />
+            <element signature="e#7861#9871#0" expanded="false" />
+            <element signature="n#!!block;n#getSeason#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -618,7 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.17915691">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -647,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.125">
           <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,9 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -672,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3384075">
           <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -698,40 +633,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/basketballCourt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.655172">
-          <caret line="1035" column="0" selection-start-line="1035" selection-start-column="0" selection-end-line="1035" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-            <element signature="e#61#12303#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/services/svgBasketballCourtService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="20" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.057954546">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,49 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/heatmap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019906323">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/shot-efficiency.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019906323">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/shot-chart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/services/shotChartService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/controllers/heatmapController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <element signature="e#201#252#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,48 +657,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/controllers/shotChartController.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externalServices/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37955347">
-          <caret line="139" column="64" selection-start-line="139" selection-start-column="64" selection-end-line="139" selection-end-column="64" />
-          <folding>
-            <element signature="e#194#1009#0" expanded="false" />
-            <element signature="e#1068#3732#0" expanded="false" />
-            <element signature="e#3788#4088#0" expanded="false" />
-            <element signature="e#4132#4432#0" expanded="false" />
-            <element signature="e#4499#6367#0" expanded="false" />
-            <element signature="e#6418#6646#0" expanded="false" />
-            <element signature="e#6710#7359#0" expanded="false" />
-            <element signature="e#7486#9264#0" expanded="false" />
-            <element signature="n#!!block;n#getSeason#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/controllers/probabilityController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17386363">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-            <element signature="e#249#300#0" expanded="false" />
-          </folding>
+          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -848,6 +672,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71022725">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bower_components/angular-chart.js/dist/angular-chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/svg/B-Ball_Retro_Net.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/services/playerStatsService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/services/svgBasketballCourtService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="124" column="30" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/controllers/homeController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -856,36 +730,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
+    <entry file="file://$PROJECT_DIR$/client/services/shotChartService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.038462">
-          <caret line="127" column="68" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/controllers/shotChartController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66071427">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="61" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/shot-chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48850575">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/controllers/heatmapController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.018973215">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
           <folding>
-            <element signature="n#style#0;n#md-autocomplete#0;n#md-list-item#0;n#md-list#0;n#md-sidenav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#206#265#0" expanded="false" />
+            <element signature="e#744#1015#0" expanded="false" />
+            <element signature="e#1066#1745#0" expanded="false" />
+            <element signature="e#1794#2464#0" expanded="false" />
+            <element signature="e#2986#3382#0" expanded="false" />
+            <element signature="e#3421#3827#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/buckets.html">
+    <entry file="file://$PROJECT_DIR$/client/views/heatmap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37126437">
+          <caret line="19" column="92" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/basketballCourt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5118243">
+          <caret line="1151" column="23" selection-start-line="1151" selection-start-column="23" selection-end-line="1151" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+            <element signature="e#61#12303#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/controllers/probabilityController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+            <element signature="e#255#314#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/controllers/bucketsController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/client/views/buckets.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/shot-efficiency.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.230769">
+          <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#md-autocomplete#0;n#md-list-item#0;n#md-list#0;n#md-sidenav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/externalServices/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60379463">
+          <caret line="211" column="65" selection-start-line="211" selection-start-column="65" selection-end-line="211" selection-end-column="65" />
           <folding />
         </state>
       </provider>

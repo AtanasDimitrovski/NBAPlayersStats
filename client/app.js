@@ -1,7 +1,7 @@
-var NbaApp = angular.module('nbaApp', ['ngRoute', 'ngMaterial']);
+var NbaApp = angular.module('nbaApp', ['ngRoute', 'ngMaterial', 'chart.js']);
 
 
-NbaApp.config(function($mdThemingProvider, $mdIconProvider){
+NbaApp.config(function($mdThemingProvider, $mdIconProvider, ChartJsProvider){
 
     $mdIconProvider
         .defaultIconSet("./assets/svg/avatars.svg", 128)
@@ -15,6 +15,7 @@ NbaApp.config(function($mdThemingProvider, $mdIconProvider){
     $mdThemingProvider.theme('default')
         .primaryPalette('brown')
         .accentPalette('red');
+
 
 });
 

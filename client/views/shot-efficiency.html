@@ -1,3 +1,10 @@
 <md-progress-circular md-mode="indeterminate" ng-show="progress"></md-progress-circular>
 
-<svg id="shot"></svg>
+<div id="svg-container">
+</div>
+
+    <md-radio-group ng-model="radioValue" layout="row" layout-padding ng-change="onRadioChange()">
+        <md-radio-button value="percent" class="md-primary">Percentage</md-radio-button>
+        <md-radio-button value="shots"> Made/Shots </md-radio-button>
+        <md-radio-button value="none">No data</md-radio-button>
+    </md-radio-group>

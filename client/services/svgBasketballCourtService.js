@@ -121,7 +121,8 @@ NbaApp.service('SvgBasketballCourtService', function(){
 
 
     var setUpSvg = function(id){
-        var base = d3.select('#'+id)
+        var base = d3.select('#'+id).append('svg')
+            .attr("id", "court")
             .attr('width', o.width)
             .attr('viewBox', "0 0 " + o.courtWidth + " " + o.visibleCourtLength)
             .append('g')
@@ -133,13 +134,6 @@ NbaApp.service('SvgBasketballCourtService', function(){
 
 // draw basketball court
     var drawCourt = function (base) {
-/*        base
-            .attr('width', o.width)
-            .attr('viewBox', "0 0 " + o.courtWidth + " " + o.visibleCourtLength)
-            .append('g')
-            .attr('class', 'shot-chart-court');
-        if (o.height) base.attr('height', o.height);*/
-
 
         base.append("rect")
             .attr('class', 'shot-chart-court-key')

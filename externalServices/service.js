@@ -192,7 +192,14 @@ module.exports.getPlayers = function (callback) {
     request.post('http://api.probasketballapi.com/player?api_key=' + API_KEY, function (err, res, body) {
         if (!err) {
             var resultsObj = JSON.parse(body);
-            callback(resultsObj);
+            var numberOfPlayers = Object.keys(resultsObj).length;
+            var result = [];
+            for (var i = 0; i < numberOfPlayers; i++) {
+                if (resultsObj[i].dk_position != "") {
+                    result.push(resultsObj[i]);
+                }
+            }
+            callback(result);
         }
     });
 };
@@ -205,12 +212,15 @@ module.exports.getPlayersByName = function (name, callback) {
             var numberOfPlayers = Object.keys(resultsObj).length;
             var result = [];
             for (var i = 0; i < numberOfPlayers; i++) {
-                var playerName = resultsObj[i].player_name.toString().toLowerCase();
-                name = name.toString().toLowerCase();
+                if (resultsObj[i].dk_position != ""){
+                    var playerName = resultsObj[i].player_name.toString().toLowerCase();
+                    name = name.toString().toLowerCase();
 
-                if (playerName.indexOf(name) > -1) {
-                    result.push(resultsObj[i]);
+                    if (playerName.indexOf(name) > -1) {
+                        result.push(resultsObj[i]);
+                    }
                 }
+
             }
 
             callback(result);
@@ -263,8 +273,12 @@ module.exports.getPlayerShotEfficiency = function (id, courtWidth, courtHeight, 
 
                 var shots = matrix[i][j].missedShots + matrix[i][j].madeShots;
                 var resultColor = "#FFFFFF";
+
+                var shot_percentage = 0;
+
                 if (shots > 0) {
-                    var colorPercent = 1 - (matrix[i][j].madeShots / shots);
+                    shot_percentage = matrix[i][j].madeShots / shots;
+                    var colorPercent = 1 - shot_percentage;
                     if (colorPercent != 1)
                         resultColor = shadeBlend(colorPercent, maxColor);
                 }
@@ -272,7 +286,10 @@ module.exports.getPlayerShotEfficiency = function (id, courtWidth, courtHeight, 
                 result.push({
                     "x": i * fieldWidth,
                     "y": j * fieldHeight,
-                    "color": resultColor
+                    "color": resultColor,
+                    "percent": shot_percentage,
+                    "made": matrix[i][j].madeShots,
+                    "shots": shots
                 })
             }
         }

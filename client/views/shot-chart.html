@@ -1,3 +1,43 @@
+
 <md-progress-circular md-mode="indeterminate" ng-show="progress"></md-progress-circular>
 
-<svg id="svgel"></svg>
+<div layout="column">
+
+    <div id="svg-container">
+    </div>
+
+
+    <div layout="row">
+
+        <div layout="column">
+            <svg height="30" width="200">
+                <circle cx="50" cy="15" r="5" stroke="black" fill="green" />
+                <text x="70" y="20" fill="black">Shot made</text>
+            </svg>
+
+            <svg height="30" width="200">
+                <circle cx="50" cy="15" r="5" stroke="black" fill="red" />
+                <text x="70" y="20" fill="black">Shot missed</text>
+            </svg>
+        </div>
+
+        <div layout="row" layout-padding>
+
+            <div>
+                <md-checkbox ng-model="boxMade" aria-label="Checkbox 1" ng-change="onBoxChanged()">
+                    Made shots
+                </md-checkbox>
+            </div>
+
+            <div>
+                <md-checkbox ng-model="boxMissed" aria-label="Checkbox 1" ng-change="onBoxChanged()">
+                    Missed shots
+                </md-checkbox>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
