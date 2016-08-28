@@ -1,87 +1,91 @@
+<style>
+
+    .img_container_custom {
+        width: 200px;
+        height: 250px;
+    }
+
+</style>
 
 <div layout="row">
 
-    <md-card style="height: 40%">
-        <md-card-header layout="column">
-            <img src="http://stats.nba.com/media/players/230x185/202738.png" alt="image caption"
-                 class="md-card-image"/>
-
-            <h2>Isaiah Thomas</h2>
-        </md-card-header>
-    </md-card>
 
 
-    <md-card layout="row" layout-padding style="height: 40%">
-        <div layout="column">
-            <h3>Name:</h3>
-            Isaiah Thomas
-            <h3>Birthdate</h3>
-            1989-02-07
-            <h3>Age</h3>
-            27
+    <div layout="row" layout-padding>
+        <div class="img_container_custom">
+            <img ng-src="{{image}}" alt="image caption"/>
         </div>
-        <div layout="column">
-            <h3>Birthplace</h3>
-            Tacoma, Washington, USA
-            <h3>Height</h3>
-            1.75m
-            <h3>Weight</h3>
-            84.1kg
-        </div>
-        <div layout="column">
-            <h3>Position</h3>
-            PG
-            <h3>Number</h3>
-            4
-        </div>
-    </md-card>
+<div layout="column">
 
-    <md-card style="height: 40%">
-        <md-card-header layout="column">
-            <img src="http://stats.nba.com/media/img/teams/logos/BOS_logo.svg" alt="image caption" style="width: 230px; height: auto"/>
-        </md-card-header>
-    </md-card>
+    <h2>{{player.player_name}}</h2>
+    Position: {{player.position}} <br>
+    Birth data: {{player.birth_date}}
 </div>
-<div layout="row">
-
-    <md-card style="height: 40%">
-        <md-card-header layout="column">
-            <img src="http://stats.nba.com/media/players/230x185/202738.png" alt="image caption"
-                 class="md-card-image"/>
-
-            <h2>Isaiah Thomas</h2>
-        </md-card-header>
-    </md-card>
 
 
-    <md-card layout="row" layout-padding style="height: 40%">
-        <div layout="column">
-            <h3>Name:</h3>
-            Isaiah Thomas
-            <h3>Birthdate</h3>
-            1989-02-07
-            <h3>Age</h3>
-            27
+    </div>
+
+    <div layout="row" layout-padding>
+        <div class="img_container_custom">
+            <img ng-src="http://stats.nba.com/media/img/teams/logos/{{team.abbreviation}}_logo.svg" alt="team img"
+                 height="201px"/>
         </div>
         <div layout="column">
-            <h3>Birthplace</h3>
-            Tacoma, Washington, USA
-            <h3>Height</h3>
-            1.75m
-            <h3>Weight</h3>
-            84.1kg
-        </div>
-        <div layout="column">
-            <h3>Position</h3>
-            PG
-            <h3>Number</h3>
-            4
-        </div>
-    </md-card>
+            <h2>City: {{team.city}}</h2>
+            Team: {{team.team_name}}
+            </div>
 
-    <md-card style="height: 40%">
-        <md-card-header layout="column">
-            <img src="http://stats.nba.com/media/img/teams/logos/BOS_logo.svg" alt="image caption" style="width: 230px; height: auto"/>
-        </md-card-header>
-    </md-card>
+
+    </div>
+
+    <div layout="column">
+
+
+    </div>
+
+
 </div>
+
+<h2>Season stats</h2>
+<!-- exact table from live demo -->
+<md-table-container>
+    <table md-table ng-model="selected" md-progress="promise">
+        <thead md-head>
+        <tr md-row>
+            <th md-column md-numeric>games</th>
+            <th md-column md-numeric>FG%</th>
+            <th md-column md-numeric>2P%</th>
+            <th md-column md-numeric>3P%</th>
+            <th md-column md-numeric>FT%</th>
+            <th md-column md-numeric>BLK</th>
+            <th md-column md-numeric>STL</th>
+            <th md-column md-numeric>O-REB</th>
+            <th md-column md-numeric>D-REB</th>
+            <th md-column md-numeric>REB</th>
+            <th md-column md-numeric>AST</th>
+            <th md-column md-numeric>TO</th>
+            <th md-column md-numeric>PF</th>
+            <th md-column md-numeric>PTS</th>
+        </tr>
+        </thead>
+        <tbody md-body>
+
+        <tr md-row >
+            <td md-cell>{{stats.games}}</td>
+            <td md-cell>{{roundNum(stats.fg_pct)}}</td>
+            <td md-cell>{{roundNum(stats.pt2_pct)}}</td>
+            <td md-cell>{{roundNum(stats.pt3_pct)}}</td>
+            <td md-cell>{{roundNum(stats.ft_pct)}}</td>
+            <td md-cell>{{roundNumAvg(stats.blk_avg)}}</td>
+            <td md-cell>{{roundNumAvg(stats.stl_avg)}}</td>
+            <td md-cell>{{roundNumAvg(stats.oreb_avg)}}</td>
+            <td md-cell>{{roundNumAvg(stats.dreb_avg)}}</td>
+            <td md-cell>{{roundNumAvg(stats.reb_avg)}}</td>
+            <td md-cell>{{roundNumAvg(stats.ast_avg)}}</td>
+            <td md-cell>{{roundNumAvg(stats.to_avg)}}</td>
+            <td md-cell>{{roundNumAvg(stats.pf_avg)}}</td>
+            <td md-cell>{{roundNumAvg(stats.pts_avg)}}</td>
+        </tr>
+        </tbody>
+    </table>
+</md-table-container>

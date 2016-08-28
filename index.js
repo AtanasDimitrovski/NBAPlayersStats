@@ -36,6 +36,13 @@ app.get('/shot-efficiency/:id', function(req, res){
 
 })
 
+app.get('/team/:id', function(req, res){
+   var teamId = req.params.id;
+    service.getTeam(teamId, function(data){
+        res.send(data);
+    })
+});
+
 app.get('/game/:id', function(req, res){
     var gameId = req.params.id;
     service.getGameById(gameId, function(data){
@@ -73,17 +80,12 @@ app.get('/stats/:id', function(req, res){
     })
 });
 
-app.get('/weather', function(req, res){
-   service.getData(function(data){
-       res.send(data);
-   });
-});
-
-app.get('/boston', function(req, res){
-   service.getIsaiah(function(data){
-       res.send(data);
-   });
-});
+app.get('/players/:id', function(req, res){
+    var playerId = req.params.id;
+    service.getPlayerInfo(playerId, function(data){
+        res.send(data);
+    })
+})
 
 app.listen(3000, function(){
     console.log('server listening on port 3000...')

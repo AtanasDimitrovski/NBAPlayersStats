@@ -1,4 +1,4 @@
-var NbaApp = angular.module('nbaApp', ['ngRoute', 'ngMaterial', 'chart.js']);
+var NbaApp = angular.module('nbaApp', ['ngRoute', 'ngMaterial', 'chart.js', 'md.data.table']);
 
 
 NbaApp.config(function($mdThemingProvider, $mdIconProvider, ChartJsProvider){

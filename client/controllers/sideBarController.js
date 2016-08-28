@@ -3,7 +3,7 @@
  */
 
 
-NbaApp.controller('SideBarController', ['$scope', '$http', '$log', '$location' , function($scope, $http, $log, $location){
+NbaApp.controller('SideBarController', ['$scope', '$http', '$log', '$location' ,'$mdSidenav', function($scope, $http, $log, $location, $mdSidenav){
 
     $scope.name = "ATA";
 
@@ -55,6 +55,13 @@ NbaApp.controller('SideBarController', ['$scope', '$http', '$log', '$location' ,
         }
 
 
+    function toggleSidenav() {
+        $mdSidenav('left').toggle();
+    }
+
+    function list(){
+        return ['eden', 'dva', 'tri'];
+    }
 
         function searchTextChange(text) {
             $log.info('Text changed to ' + text);

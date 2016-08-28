@@ -4,7 +4,7 @@
 
 var request = require('request');
 
-const API_KEY = 'LdK4oTeVbqwU5m0vHZQcFBYAR7in36lr';
+const API_KEY = 'YOg78ZtrbJezfa96mGlU10cvnwB2PyuE';
 
 
 module.exports.getPlayerShotChart = function (id, callback) {
@@ -228,6 +228,25 @@ module.exports.getPlayersByName = function (name, callback) {
     });
 }
 
+module.exports.getTeam = function(id, callback){
+    request.post('http://api.probasketballapi.com/team?api_key=' + API_KEY + '&team_id='+id, function (err, res, body) {
+        if (!err) {
+            var resultsObj = JSON.parse(body);
+            callback(resultsObj);
+        }
+    });
+}
+
+
+module.exports.getPlayerInfo = function(id, callback){
+    request.post('http://api.probasketballapi.com/player?api_key=' + API_KEY + '&player_id='+id, function (err, res, body) {
+        if (!err) {
+            var resultsObj = JSON.parse(body);
+            callback(resultsObj);
+        }
+    });
+}
+
 module.exports.getPlayerShotEfficiency = function (id, courtWidth, courtHeight, fieldWidth, fieldHeight, maxColor, callback) {
 
     var numberOfColumns = Math.floor(courtWidth / fieldWidth);
@@ -256,8 +275,7 @@ module.exports.getPlayerShotEfficiency = function (id, courtWidth, courtHeight, 
             var row = Math.floor(y / fieldHeight);
             var column = Math.floor(x / fieldWidth);
 
-
-            if (row >= 0 && column >= 0) {
+            if (row >= 0 && column >= 0 && row < 10 && column < 12) {
                 if (data[i].made == 1) {
                     matrix[column][row].madeShots += 1;
                 }

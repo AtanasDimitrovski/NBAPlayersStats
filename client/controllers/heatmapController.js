@@ -24,7 +24,7 @@ NbaApp.controller('HeatmapController', ['$scope', 'ShotChartService', 'SvgBasket
         });
 
 
-        function initMatrix(){
+        function initMatrix() {
             var matrix = [];
             for (var i = 0; i < 10; i++) {
                 matrix[i] = new Array(12);
@@ -36,7 +36,7 @@ NbaApp.controller('HeatmapController', ['$scope', 'ShotChartService', 'SvgBasket
             return matrix;
         }
 
-        function populateMatrix(matrix, shotType){
+        function populateMatrix(matrix, shotType) {
 
             var max = 0;
 
@@ -44,6 +44,9 @@ NbaApp.controller('HeatmapController', ['$scope', 'ShotChartService', 'SvgBasket
                 var x = 49.5 - ((podatoci[i].x + 250) / 10);
                 var y = 35.5 - ((podatoci[i].y + 30) / 10);
 
+                if (x<0){
+                    x = 0;
+                }
                 var row = Math.floor(y / 3);
                 var column = Math.floor(x / 5);
 
@@ -52,16 +55,18 @@ NbaApp.controller('HeatmapController', ['$scope', 'ShotChartService', 'SvgBasket
                     if (matrix[column][row] > max && max < 20) {
                         max = matrix[column][row];
                         if (max > 20)
-                            max =20;
+                            max = 20;
 
                     }
                 }
+
+
             }
 
             return max;
         }
 
-        function draw(matrix, max, color, base){
+        function draw(matrix, max, color, base) {
             for (var i = 0; i < 10; i++) {
                 for (var j = 0; j < 12; j++) {
 
@@ -82,7 +87,7 @@ NbaApp.controller('HeatmapController', ['$scope', 'ShotChartService', 'SvgBasket
             }
         }
 
-        function drawShots(base, shotType, color){
+        function drawShots(base, shotType, color) {
 
             for (var i = 0; i < podatoci.length; i++) {
 
@@ -106,14 +111,14 @@ NbaApp.controller('HeatmapController', ['$scope', 'ShotChartService', 'SvgBasket
 
             draw(matrix, max, color1, base);
 
-            if ($scope.heatShots){
+            if ($scope.heatShots) {
                 drawShots(base, 1, "green");
             }
 
             svgBasketballCourtService.getCourt(base);
         }
 
-        var drawIceMap = function(id){
+        var drawIceMap = function (id) {
             var base = svgBasketballCourtService.setCourt(id);
 
             var matrixIce = initMatrix();
@@ -123,20 +128,20 @@ NbaApp.controller('HeatmapController', ['$scope', 'ShotChartService', 'SvgBasket
 
             draw(matrixIce, max, colorIce, base);
 
-            if ($scope.iceShots){
+            if ($scope.iceShots) {
                 drawShots(base, 0, "red");
             }
 
             svgBasketballCourtService.getCourt(base);
         };
 
-        $scope.showHeatShots = function(){
-                d3.select('#'+heat_id).select('#court').remove();
-                drawHeatMap(heat_id);
+        $scope.showHeatShots = function () {
+            d3.select('#' + heat_id).select('#court').remove();
+            drawHeatMap(heat_id);
         }
 
-        $scope.shotIceShots = function(){
-            d3.select('#'+ice_id).select('#court').remove();
+        $scope.shotIceShots = function () {
+            d3.select('#' + ice_id).select('#court').remove();
             drawIceMap(ice_id);
         }
 

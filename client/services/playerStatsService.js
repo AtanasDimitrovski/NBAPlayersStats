@@ -16,5 +16,17 @@ NbaApp.service('PlayerStatsService', ['$http', function($http){
         });
     }
 
+    this.getPlayerInfo = function(id, callback){
+        $http.get("/players/"+id).then(function (response) {
+            callback(response.data);
+        });
+    }
+
+    this.getTeamInfo = function(id, callback){
+        $http.get("/team/"+id).then(function (response) {
+            callback(response.data);
+        });
+    }
+
 
 }]);

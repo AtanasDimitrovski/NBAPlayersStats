@@ -1,7 +1,7 @@
 
 NbaApp.config(['$routeProvider', function($routeProvider){
 
-    $routeProvider.when('/home', {
+    $routeProvider.when('/player/:id', {
         templateUrl: 'views/home.html',
         controller: 'HomeController'
     });

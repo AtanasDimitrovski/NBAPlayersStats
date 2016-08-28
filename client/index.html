@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
     <link rel="stylesheet" href="css/app.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link href="bower_components/angular-material-data-table/dist/md-data-table.min.css" rel="stylesheet" type="text/css"/>
 
     <style type="text/css">
         /**
@@ -23,16 +24,19 @@
 <body ng-app="nbaApp" layout="column" ng-cloak>
 
 
-<md-toolbar layout="row">
-    <md-button class="menu" hide-gt-sm ng-click="ul.toggleList()" aria-label="Show User List">
+<md-toolbar layout="row" ng-controller="SideBarController as sb">
+    <md-button class="menu" hide-gt-sm ng-click="sb.list()" aria-label="Show Options">
         <md-icon md-svg-icon="menu"></md-icon>
     </md-button>
-    <h1>Angular Material - Starter App</h1>
+    <md-button href="#/">
+        <h1>15/16 NBA Stats</h1>
+    </md-button>
+
 </md-toolbar>
 
 <div flex layout="row" ng-controller="SideBarController as sb">
 
-        <md-sidenav ng-click="ul.toggleList()" md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
+        <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
                     class="md-whiteframe-z2">
 
 
@@ -59,7 +63,7 @@
                     </md-autocomplete>
                 </md-list-item>
                 <md-list-item>
-                    <md-button href="#/home">
+                    <md-button href="#/player/{{currentPlayer.id}}">
                         <md-icon md-svg-src="assets/svg/isaiah.svg" class="avatar"></md-icon>
                         Player Info
                     </md-button>
@@ -73,12 +77,12 @@
                 <md-list-item>
                     <md-button href="#/heatmap/{{currentPlayer.id}}">
                         <md-icon md-svg-src="assets/svg/heatmap.svg" class="avatar"></md-icon>
-                        Heat map
+                        Heat/Ice map
                     </md-button>
                 </md-list-item>
                 <md-list-item>
                     <md-button href="#/shot-efficiency/{{currentPlayer.id}}">
-                        <md-icon md-svg-src="assets/svg/heatmap.svg" class="avatar"></md-icon>
+                        <md-icon md-svg-src="assets/svg/custom_percent.svg" class="avatar"></md-icon>
                         Player efficiency
                     </md-button>
                 </md-list-item>
@@ -117,7 +121,7 @@
 
 <script src="bower_components/Chart.js/dist/Chart.min.js"></script>
 <script src="bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
-
+<script type="text/javascript" src="bower_components/angular-material-data-table/dist/md-data-table.min.js"></script>
 <script src="bower_components/d3/d3.min.js"></script>
 
 <!-- App -->
